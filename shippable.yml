@@ -2,11 +2,9 @@
 language : java
 
 jdk:
-  - "openjdk9"
   - "openjdk8"
   - "oraclejdk8"
-  - "openjdk7"
-  - "oraclejdk7"
+
 
   
- #after_success: "-mvn clean install"
+ after_success: "-mvn clean install"
