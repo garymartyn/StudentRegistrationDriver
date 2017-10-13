@@ -127,4 +127,19 @@ public class DriverClassTest {
         assertTrue(true);
     }
 
+    /*unit test to check username should assertFalse*/
+    @Test
+    public void studentTest2() {
+        Student s1 = new Student("Test Student", new LocalDate(1995, 4, 24), "1455400000");
+
+        assertFalse(s1.getUsername().equals("Test Student50"));
+    }
+
+    /*unit test to check username - should be assertTrue*/
+    @Test
+    public void test2() {
+        Student s = new Student("john smith", new LocalDate(1995, 5, 10), "14520");
+        assertTrue(s.getAge() == 22);
+    }
+
 }
