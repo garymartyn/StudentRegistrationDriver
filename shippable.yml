@@ -7,5 +7,5 @@ jdk:
 build:
   ci:
     - mvn clean 
-    - mvn deploy
+    #- mvn deploy
     - mvn test
